@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /*HOME START*/
 
 .home {
@@ -121,7 +125,8 @@
 .banner-left .banner-left-button button:hover {
     background-color: #008ED6;
 }
-.phone{
+
+.phone {
     position: absolute;
     bottom: 0;
     left: 55%;
@@ -133,25 +138,29 @@
 /*HOME END*/
 
 /*OVERVIEW*/
-.overview-heading{
+.overview-heading {
     padding: 50px;
 }
-.overview-heading p{
+
+.overview-heading p {
     color: #008ED6;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
 }
-.overview-heading h4{
- font-size: 25px;
+
+.overview-heading h4 {
+    font-size: 40px;
 }
-.overview-heading span{
+
+.overview-heading span {
     display: inline-block;
     width: 70px;
     height: 2px;
     position: relative;
 }
-.overview-heading span::before{
+
+.overview-heading span::before {
     content: '';
     position: absolute;
     left: 0;
@@ -161,7 +170,8 @@
     background: #008ED6;
     transition: 0.4s all ease-in-out;
 }
-.overview-heading span::after{
+
+.overview-heading span::after {
     content: '';
     position: absolute;
     right: 0;
@@ -170,19 +180,22 @@
     width: 0%;
     background: #008ED6;
     transition: 0.4s all ease-in-out;
-    
+
 }
-.overview:hover .overview-heading span::before{
-width: 45%;
-}
-.overview:hover .overview-heading span::after{
+
+.overview:hover .overview-heading span::before {
     width: 45%;
 }
 
-.overview-pad{
-padding-bottom: 100px;
+.overview:hover .overview-heading span::after {
+    width: 45%;
 }
-.overview-content .fa{
+
+.overview-pad {
+    padding-bottom: 80px;
+}
+
+.overview-content .fa {
     color: #008ED6;
     font-size: 30px;
     border: 1px solid #008ED6;
@@ -191,12 +204,317 @@ padding-bottom: 100px;
     width: 100px;
     line-height: 100px;
 }
-.overview-content h5{
+
+.overview-content h5 {
     margin-top: 20px;
     font-size: 30px;
-    
+
     font-weight: 400;
 }
-.overview-content p{
+
+.overview-content p {
     color: #999999;
 }
+
+/*Device start*/
+.device-content {
+    padding-top: 100px;
+    min-height: 90vh;
+}
+
+.device-content p span {
+    color: #0777B3;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-span span {
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    position: relative;
+}
+
+.content-span span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+
+.content-span span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+
+.device:hover .content-span span::before {
+    width: 46%;
+}
+
+.device:hover .content-span span::after {
+    width: 46%;
+}
+
+.device-content h4 {
+    font-size: 40px;
+}
+
+.device-content p {
+    color: #999999;
+    font-size: 16px;
+
+}
+
+.device-content ul {
+    list-style: none;
+    margin: 0;
+}
+
+.device-content ul li {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+.device-content ul li i {
+    color: #0777B3;
+    margin-right: 15px;
+    width: 15px;
+    text-align: center;
+
+}
+
+.device-image img {
+    margin-top: 50px;
+}
+
+/*DEVICE END-----------------------*/
+/*CUSTOMISE START*/
+.customise {
+    min-height: 60vh;
+    background-color: #F2F2F2;
+    padding-top: 50px;
+}
+
+.customise-content {
+    margin-top: 70px;
+}
+
+/*prev code in line 222*/
+.customise:hover .content-span span::before {
+    width: 46%;
+}
+
+.customise:hover .content-span span::after {
+    width: 46%;
+}
+
+.customise p span {
+    color: #0777B3;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.customise h4 {
+    font-size: 40px;
+}
+
+.customise p {
+    color: #999999;
+    font-size: 16px;
+}
+
+.customise-img {
+    margin-top: 20px;
+}
+
+/*CUSTOMISE END*/
+
+/*THEME START*/
+.theme {
+    background-color: #15141A;
+    padding: 30px;
+}
+
+.theme h4 span {
+    font-weight: bold;
+}
+
+.theme h4 {
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+}
+
+.theme button {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    height: 45px;
+    width: 160px;
+    background-color: transparent;
+    color: white;
+    transition: 0.4s all ease-in-out;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.theme button:hover {
+    background-color: #008ED6;
+    border: 1px solid #008ED6;
+}
+
+
+/*THEME END*/
+/*PRICING START*/
+.pricing {
+    padding: 50px;
+    min-height: 90vh;
+}
+.pricing-content-tab{
+    margin-top: 50px;
+}
+.pricing-heading p {
+    color: #0777B3;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pricing-heading h4 {
+    font-size: 40px;
+}
+
+.pricing-heading span {
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    position: relative;
+}
+
+.pricing-heading span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+
+.pricing-heading span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+
+.pricing:hover .pricing-heading span::before {
+    width: 46%;
+}
+
+.pricing:hover .pricing-heading span::after {
+    width: 46%;
+}
+
+.pricing-content {
+    border: 1px solid #999999;
+    width: 90%;
+}
+
+.pricing-content h5 {
+    border-bottom: 1px solid #999999;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: 0.1s all ease-in-out;
+    margin-bottom: 0;
+}
+
+.pricing-content:hover h5 {
+    color: #008ED6;
+    
+}
+
+.pricing-content p {
+    color: #999999;
+    font-size: 16px;
+}
+
+
+.pricing-content button {
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background-color: transparent;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.4s all ease-in-out;
+}
+.pricing-content:hover button{
+background-color: #008ED6;
+color: white;
+border: 1px solid #008ED6;
+
+}
+.pricing-amount {
+    border-bottom: 1px solid #999999;
+    transition: 0.4s all ease-in-out;
+}
+
+.pricing-amount p {
+    color: black;
+    font-size: 50px;
+    margin: 0;
+    transition: 0.4s all ease-in-out;
+}
+.pricing-custom-p p span{
+    color: #008ED6;
+}
+.pricing-custom-p p{
+    color: #999999;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+.pricing-content:hover .pricing-amount{
+    background-color: #008ED6;
+}
+.pricing-content:hover .pricing-amount p{
+    color: white;
+}
+.pricing-amount p sup {
+    font-size: 18px;
+}
+
+.pricing-amount span p {
+    color: #999999;
+    font-size: 16px;
+
+}
+
+
+/*PRICING END*/
