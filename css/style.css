@@ -384,9 +384,11 @@ body {
     padding: 50px;
     min-height: 90vh;
 }
-.pricing-content-tab{
+
+.pricing-content-tab {
     margin-top: 50px;
 }
+
 .pricing-heading p {
     color: #0777B3;
     font-size: 16px;
@@ -453,14 +455,12 @@ body {
 
 .pricing-content:hover h5 {
     color: #008ED6;
-    
 }
 
 .pricing-content p {
     color: #999999;
     font-size: 16px;
 }
-
 
 .pricing-content button {
     border: 1px solid #999999;
@@ -472,12 +472,13 @@ body {
     margin-bottom: 20px;
     transition: 0.4s all ease-in-out;
 }
-.pricing-content:hover button{
-background-color: #008ED6;
-color: white;
-border: 1px solid #008ED6;
 
+.pricing-content:hover button {
+    background-color: #008ED6;
+    color: white;
+    border: 1px solid #008ED6;
 }
+
 .pricing-amount {
     border-bottom: 1px solid #999999;
     transition: 0.4s all ease-in-out;
@@ -489,23 +490,27 @@ border: 1px solid #008ED6;
     margin: 0;
     transition: 0.4s all ease-in-out;
 }
-.pricing-custom-p p span{
+
+.pricing-custom-p p span {
     color: #008ED6;
 }
-.pricing-custom-p p{
+
+.pricing-custom-p p {
     color: #999999;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
-   
 }
-.pricing-content:hover .pricing-amount{
+
+.pricing-content:hover .pricing-amount {
     background-color: #008ED6;
 }
-.pricing-content:hover .pricing-amount p{
+
+.pricing-content:hover .pricing-amount p {
     color: white;
 }
+
 .pricing-amount p sup {
     font-size: 18px;
 }
@@ -513,8 +518,167 @@ border: 1px solid #008ED6;
 .pricing-amount span p {
     color: #999999;
     font-size: 16px;
-
 }
 
-
 /*PRICING END*/
+/*CONTACT US START*/
+.contact {
+    background-color: #EDEDED;
+    min-height: 80vh;
+    padding: 50px;
+}
+.contact-content{
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: 200px;
+    padding-top: 30px;
+}
+
+.contact-heading p {
+    color: #0777B3;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-heading h4 {
+    font-size: 40px;
+}
+
+.contact-heading span {
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    position: relative;
+}
+
+.contact-heading span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+
+.contact-heading span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+
+.contact:hover .contact-heading span::after {
+    width: 46%;
+}
+
+.contact:hover .contact-heading span::before {
+    width: 46%;
+}
+
+.contact-content i{
+color: #008ED6;
+font-size: 40px;
+margin-bottom: 30px;
+}
+.contact-content p{
+color: #999999;
+font-size: 16px;
+}
+/*FORM */
+.contact-form{
+
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+.contact-form-in{
+    display: flex;
+    background-color: #15141A;
+    width: 700px;
+    height: 280px;
+    position: absolute;
+    left: 24%;
+    padding: 50px;
+    
+}
+.contact-form-in input{
+    border: 1px solid #999999;
+    border-radius: 3px;
+    background-color: transparent;
+    height: 40px;
+    width: 300px;
+    color: #999999;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.contact-form-in textarea{
+    border: 1px solid #999999;
+    background-color: transparent;
+    height: 165px;
+    margin-left: 20px;
+    width: 280px;
+    color: #999999;
+    padding: 10px;
+}
+.contact-form-in input::placeholder{
+    padding: 10px;
+}
+.contact-form-in button{
+    border: 1px solid #008ED6;
+    border-radius: 3px;
+    background-color: #008ED6;
+    height: 40px;
+    width: 150px;
+    color: white;
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    right: 49px;
+    bottom: 14px;
+}
+.contact-form-in button:hover{
+    background-color:#0077b3;
+}
+
+/*MAP*/
+.map{
+    width: 99.2%;
+}
+.contact-map iframe{
+    height: 300px;
+    width: 100%;
+    
+}
+/*CONTACT US END*/
+/*FOOTER START*/
+.footer{
+    background-color: #15141A;
+    min-height: 12vh;
+}
+
+.footer-icons i{
+    color: #444348;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 20px;
+    transition: 0.3s all ease-in-out;
+}
+.footer-icons i:hover{
+    color: #008ED6;
+}
+.footer-text p{
+    color: #444348;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*FOOTER END*/
