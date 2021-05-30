@@ -342,6 +342,124 @@ body {
 }
 
 /*CUSTOMISE END*/
+/*testimonial start*/
+.testimonial{
+    min-height: 70vh;
+    background-image: url(../img/testimonial-banner-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.testimonial-heading p{
+    color: #008ED6;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.testimonial-heading h4{
+    font-size: 40px;
+    color: white;
+}
+.testimonial-heading span{
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    position: relative;
+}
+.testimonial-heading span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+.testimonial-heading span::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+.testimonial:hover .testimonial-heading span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 47%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+.testimonial:hover .testimonial-heading span::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 47%;
+    background: #008ED6;
+    transition: 0.4s all ease-in-out;
+}
+.testimonial-person{
+    margin-top: 30px;
+}
+.testimonial-person p{
+    color: white;
+    padding-left: 20px;
+}
+.testimonial-person-child{
+    display: flex;
+}
+.testimonial-person-child-img img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial-person-child h5{
+    color: white;
+    font-size: 16px;
+
+}
+.testimonial-person-child h4{
+    color: white;
+    font-size: 20px;
+}
+.owl-dots{
+    text-align: center;
+}
+.owl-dots .owl-dot span{
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    transition: 0.4s all ease-in-out;
+}
+.owl-dots .active span{
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    transition: 0.4s all ease-in-out;
+}
+
+/*testimonial end*/
+
+
+
 
 /*THEME START*/
 .theme {
@@ -482,6 +600,8 @@ body {
 .pricing-amount {
     border-bottom: 1px solid #999999;
     transition: 0.4s all ease-in-out;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .pricing-amount p {
@@ -489,6 +609,7 @@ body {
     font-size: 50px;
     margin: 0;
     transition: 0.4s all ease-in-out;
+    
 }
 
 .pricing-custom-p p span {
