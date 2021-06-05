@@ -94,13 +94,17 @@ text-align: center;
 }
 
 /*theme*/
+.theme{
+    text-align: center;
+}
 .theme h4{
     font-size: 20px;
     text-align: center;
 }
 .theme-button{
-    display: flex;
+    
     margin-top: 10px;
+    text-align: center;
 }
 .theme button {
     height: 35px;
@@ -145,7 +149,8 @@ text-align: center;
     background-color: #15141A;
     width: 100%;
     height: 420px;
-    
+    position: sticky;
+    text-align: center;
 }
 .contact-form input{
     width: 100%;
@@ -164,6 +169,130 @@ text-align: center;
 .footer-text p{
     font-size: 14px;
 }
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 768px){
+
+/*Banner*/
+.phone{
+    display: none;
+}
+.banner-content{
+    min-height: 70vh;
+    align-items: s;
+}
+.banner-content .col-md-9{
+    padding-top: 0;
+    display: block;
+    margin: auto;
+}
+
+.banner-left{
+    display: block;
+    margin: auto;
+}
+.banner-left p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.banner-left h4{
+    text-align: center;
+}
+.banner-left-button{
+    text-align: center;
+}
+.over-pad{
+    margin-top: 0px;
+}
+
+
+.responsive-display-none{
+    display: block;
+    
+}
+/*OVERVIEW*/
+.overview-heading {
+    padding: 20px;
+}
+/*OVERVIEW*/
+/*DEVICE*/
+.device-content{
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+.rev-device{
+    flex-direction: column-reverse;
+}
+.device-content{
+    min-height: 60vh;
+}
+.device-image{
+    text-align: center;
+}
+.device-img-w{
+    width: 40%;
+    margin-top: 0;
+}
+/*DEVICE*/
+/*CUSTOMISE*/
+.customise{
+    padding-top: 0;
+}
+.customise-content {
+    margin-top: 30px;
+}
+/*CUSTOMISE*/
+
+/*THEME PART*/
+.theme h4{
+    margin-bottom: 10px;
+}
+.theme{
+    text-align: center;
+}
+/*THEME PART*/
+/*PRICING*/
+.pricing {
+    padding: 20px;
+    min-height: 90vh;
+}
+.pricing-content-tab {
+    margin-top: 0px;
+}
+.pricing-content{
+    margin-bottom: 10px;
+}
+
+/*PRICING*/
+
+
+/*CONTACT US*/
+.contact {
+
+    padding: 30px;
+}
+/*CONTACT US*/
+/*form*/
+.contact-form{
+    transform: translateX(-50%);
+}
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .contact-form{
+        transform: translateX(-50%);
+    }
+
+
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+    .contact-form{
+        transform: translateX(-50%);
+    }
 
 
 }
