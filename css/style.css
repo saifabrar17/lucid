@@ -203,7 +203,7 @@ body {
 
 .overview-content .fa {
     color: #008ED6;
-    font-size: 30px;
+    font-size: 35px;
     border: 1px solid #008ED6;
     border-radius: 50%;
     height: 100px;
@@ -224,10 +224,13 @@ body {
 
 /*Device start*/
 .device-content {
-    padding-top: 100px;
-    min-height: 90vh;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    min-height: 80vh;
 }
-
+.device-img-w{
+    width: 75%;
+}
 .device-content p span {
     color: #0777B3;
     font-size: 16px;
@@ -285,6 +288,10 @@ body {
 .device-content ul {
     list-style: none;
     margin: 0;
+}
+.device-content ul{
+    margin: 0;
+    padding: 0;
 }
 
 .device-content ul li {
@@ -718,25 +725,24 @@ color: #999999;
 font-size: 16px;
 }
 /*FORM */
-.contact-form{
-
-    display: block;
-    text-align: center;
- 
-    margin-top: 40px;
+.contact{
+    position: relative;
 }
 .contact-form{
     background-color: #15141A;
-    width: 700px;
-    height: 280px;
-    padding: 50px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+  text-align: right;
+   
+    
 }
 .contact-form input{
     border: 1px solid #999999;
     border-radius: 3px;
     background-color: transparent;
     height: 40px;
-    width: 300px;
+    width: 100%;
     color: #999999;
     margin-bottom: 20px;
     padding: 10px;
@@ -745,8 +751,8 @@ font-size: 16px;
     border: 1px solid #999999;
     background-color: transparent;
     height: 165px;
-    margin-left: 20px;
-    width: 280px;
+    
+    width: 100%;
     color: #999999;
     padding: 10px;
 }
@@ -762,7 +768,7 @@ font-size: 16px;
     color: white;
     transition: 0.4s all ease-in-out;
     padding: 0;
-    margin-left: 150px;
+    margin: 0;
 }
 
 
@@ -794,3 +800,6 @@ font-size: 16px;
     margin-top: 10px;
 }
 /*FOOTER END*/
+.responsive-display-none{
+    display: none;
+}
